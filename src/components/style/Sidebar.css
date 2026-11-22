@@ -1,3 +1,7 @@
+aside {
+  padding: 2;
+}
+
 aside .accordion {
   --bs-accordion-bg: transparent;
   --bs-accordion-color: #fff;
