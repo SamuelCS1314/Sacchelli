@@ -3,9 +3,9 @@ import './style/Header.css'
 
 export default function Header() {
     return (
-        <Navbar bg="white" className="border-bottom">
+        <Navbar className="border-bottom header" style={{ height: "12%" }}>
             <Container fluid>
-                <Navbar.Brand>Painel Administrativo</Navbar.Brand>
+                <Navbar.Brand className="fw-bold "><h3>Sacchelli - Painel Administrativo</h3></Navbar.Brand>
             </Container>
         </Navbar>
     )

@@ -1,0 +1,24 @@
+.header {
+    position: relative;
+    overflow: hidden;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 75%; /* Posição horizontal do conjunto */
+    width: 200%;
+    height: 12px; /* Espessura das linhas */
+    background: #268f32;
+    box-shadow:
+        0 -16px 0 #003a72,
+        0 16px 0  #fcb500;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    pointer-events: none;
+}
+
+.header .container-fluid {
+    position: relative;
+    z-index: 1; /* Titulo Acima das listras */ 
+}
