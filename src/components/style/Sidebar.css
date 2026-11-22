@@ -1,0 +1,28 @@
+aside .accordion {
+  --bs-accordion-bg: transparent;
+  --bs-accordion-color: #fff;
+  --bs-accordion-border-width: 0;
+  --bs-accordion-btn-color: #fff;
+  --bs-accordion-btn-bg: transparent;
+  --bs-accordion-active-bg: transparent;
+  --bs-accordion-active-color: #fff;
+  --bs-accordion-btn-focus-box-shadow: none;
+}
+
+aside .accordion-button {
+  background-color: transparent;
+  color: #fff;
+  box-shadow: none;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+aside .accordion-button:not(.collapsed) {
+  background-color: transparent;
+  color: #fff;
+  box-shadow: none;
+}
+
+aside .accordion-button::after {
+  filter: brightness(0) invert(1);
+}
