@@ -9,7 +9,7 @@
     top: 50%;
     left: 75%; /* Posição horizontal do conjunto */
     width: 200%;
-    height: 12px; /* Espessura das linhas */
+    height: 16px; /* Espessura das linhas */
     background: #268f32;
     box-shadow:
         0 -16px 0 #003a72,
