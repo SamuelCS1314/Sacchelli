@@ -29,42 +29,42 @@ export default function Login() {
             setErro("E-mail ou senha invalidos")
         }
     };
+
+    return (
+        <div className="d-flex vh-100 align-itens-center justify-content-center bg-light">
+            <Card style={{ width: 360 }} className="shadow-sm">
+                <Card.Body className="p-4">
+                    <h4 className="text-center mb-4">Entrar</h4>
+    
+                    {erro && <Alert variant="danger">{erro}</Alert>}
+    
+                    <Form onSubmit={handleSubmit}>
+                        <Form.Group className="mb-3" controlID="email">
+                            <Form.Label>E-mail</Form.Label>
+                            <Form.Control
+                                type="emial"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                                required
+                            />
+                        </Form.Group>
+    
+                        <Form.Group className="mb-4" controlId="senha">
+                            <Form.Label>Senha</Form.Label>
+                            <Form.Control
+                                type="senha"
+                                value={senha}
+                                onChange={(e) => setSenha(e.target.value)}
+                                required
+                            />
+                        </Form.Group>
+    
+                        <Button type="submit" className="w-100">
+                            Entrar
+                        </Button>
+                    </Form>
+                </Card.Body>
+            </Card>
+        </div>
+    )
 }
-
-return (
-    <div className="d-flex vh-100 align-itens-center justify-content-center bg-light">
-        <Card style={{ width: 360 }} className="shadow-sm">
-            <Card.Body className="p-4">
-                <h4 className="text-center mb-4">Entrar</h4>
-
-                {erro && <Alert variant="danger">{erro}</Alert>}
-
-                <Form onSubmit={handleSubmit}>
-                    <Form.Group className="mb-3" controlID="email">
-                        <Form.Label>E-mail</Form.Label>
-                        <Form.Control
-                            type="emial"
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
-                            required
-                        />
-                    </Form.Group>
-
-                    <Form.Group className="mb-4" controlId="senha">
-                        <Form.Label>Senha</Form.Label>
-                        <Form.Control
-                            type="senha"
-                            value={senha}
-                            onChange={(e) => setSenha(e.target.value)}
-                            required
-                        />
-                    </Form.Group>
-
-                    <Button type="submit" className="w-100">
-                        Entrar
-                    </Button>
-                </Form>
-            </Card.Body>
-        </Card>
-    </div>
-)
