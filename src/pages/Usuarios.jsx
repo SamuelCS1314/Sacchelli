@@ -1,8 +1,9 @@
 export default function Usuarios() {
     return (
-        <>
-          <h2>Usuário</h2>
-          <p>Aqui vai a listafem de usúarios</p>
-        </>
+        <div>
+            <h1>Usuarios</h1>
+            <p>Aq vai ficar os components</p>
+        </div>
+        
     )
 }

@@ -5,13 +5,13 @@ import {
 import { NavLink } from 'react-router-dom'
 import { PeopleFill, Building } from "react-bootstrap-icons";
 import './style/Sidebar.css'
-import logo_negativa from "../assets/logo_sacchelli_negativa.svg"
+import logo from "../assets/logo_sacchelli_colorida.svg"
 
 export default function Sidebar() {
     return (
         <aside className="h-100  bg-dark overflow-auto" style={{ width: "15%" }}>
             <div className="text-center mb-3 mt-3">
-                <img src={logo_negativa} alt="Logo Empresa" img-fluid style={{width: "90%"}} />
+                <img src={logo} alt="Logo Empresa" img-fluid style={{width: "90%"}} />
             </div>
             <Accordion flush defaultActiveKey="1">
                 <Accordion.Item eventKey="0">
